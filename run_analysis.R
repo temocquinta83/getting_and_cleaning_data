@@ -68,4 +68,4 @@ df2 <- aggregate(dataset.df[,3:dflen], list(dataset.df$subject, dataset.df$activ
 names(df2) <- c("subject", "activity", names(df2)[3:dflen])
 
 ## Write Data Set to txt file
-write.txt(df2, file = "wk4_prj_step5.txt", row.names = FALSE)
+write.table(df2, file = "wk4_prj_step5.txt", row.names = FALSE)
